@@ -1,0 +1,6 @@
+book_id,title,author,genre,description
+1,Data Science 101,John Doe,Data Science,Introduction to Data Science techniques
+2,Machine Learning for Dummies,Jane Smith,Machine Learning,Beginner’s guide to Machine Learning
+3,Introduction to AI,Alice Brown,AI,Fundamentals of Artificial Intelligence
+4,Deep Learning with Python,Bob White,Deep Learning,Practical deep learning with Keras and TensorFlow
+5,Python for Data Analysis,Charlie Black,Data Science,Comprehensive guide to Python for Data Analysis
