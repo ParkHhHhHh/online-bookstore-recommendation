@@ -29,3 +29,25 @@ The goal is to demonstrate **production-quality ML engineering**, clean software
 | ⚙️ **Engineering**           | Modular architecture, unit tests, API server       |
 | 🎨 **UX / UI**               | Modern Streamlit app for real-time recommendations |
 | 🚀 **Deployment-Ready**      | Packaged FastAPI endpoint, clear environment setup |
+
+---
+
+📁 Project Architecture
+<p align="center"> <img src="https://dummyimage.com/900x450/1a1a1a/ffffff&text=System+Architecture+Diagram+(replace+me)" width="90%" /> </p>
+
+
+online-bookstore-recommendation/
+│
+├── data/               # Sample datasets (books, ratings, users)
+├── src/                # Core ML + API logic
+│   ├── data_loader.py
+│   ├── preprocess.py
+│   ├── model.py
+│   ├── evaluation.py
+│   └── api.py
+│
+├── app/                # Streamlit UI
+├── tests/              # Unit tests
+├── notebooks/          # EDA + training notebooks
+├── requirements.txt    
+└── README.md           
