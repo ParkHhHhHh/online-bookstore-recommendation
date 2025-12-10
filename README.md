@@ -22,6 +22,7 @@ The goal is to demonstrate **production-quality ML engineering**, clean software
 ---
 
 ## 🧩 Key Features
+
 | **Category**                 | **Features**                                       |
 | ---------------------------- | -------------------------------------------------- |
 | 🔍 **Recommendation Engine** | Hybrid SVD + TF-IDF model, personalized ranking    |
@@ -32,10 +33,10 @@ The goal is to demonstrate **production-quality ML engineering**, clean software
 
 ---
 
-📁 Project Architecture
+## 📁 Project Architecture
 <p align="center"> <img src="https://dummyimage.com/900x450/1a1a1a/ffffff&text=System+Architecture+Diagram+(replace+me)" width="90%" /> </p>
 
-
+```powershell
 online-bookstore-recommendation/
 │
 ├── data/               # Sample datasets (books, ratings, users)
@@ -51,3 +52,77 @@ online-bookstore-recommendation/
 ├── notebooks/          # EDA + training notebooks
 ├── requirements.txt    
 └── README.md           
+```
+
+---
+
+## 📦 Tech Stack
+
+| **Layer**         | **Technologies**           |
+| ----------------- | -------------------------- |
+| **Language**      | Python 3.10                |
+| **Backend API**   | FastAPI, Uvicorn           |
+| **Frontend UI**   | Streamlit                  |
+| **Modeling**      | NumPy, SciPy, Scikit-Learn |
+| **Testing**       | Pytest                     |
+| **Visualization** | Matplotlib, Seaborn        |
+
+---
+
+## 🧠 Model Components
+**1. Collaborative Filtering (SVD)**
+
+- Learns latent user-item features
+
+- Captures preference patterns
+
+- Predicts missing ratings
+
+**2. Content-Based TF-IDF Similarity**
+
+- Works even for new/low-activity users
+
+- Uses book descriptions
+
+- Computes cosine similarity matrix
+
+**3. Hybrid Strategy**
+
+```ini
+FinalScore = SVD_Prediction + Content_Similarity
+```
+<p align="center"> <img src="https://dummyimage.com/800x250/333/fff&text=Hybrid+Model+Diagram+(replace+me)" width="70%" /> </p>
+
+---
+
+## 🚀 Quick Start
+
+**1. Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**2. Train the Model**
+
+```bash
+python train.py   # or run notebook
+```
+
+**3. Start API Server**
+
+```bash
+uvicorn src.api:app --reload
+```
+
+**4. Run Streamlit App**
+
+```bash
+streamlit run app/app.py
+```
+
+---
+
+🌐 API Example
+
+POST /recommend
