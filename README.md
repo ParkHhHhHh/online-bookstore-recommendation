@@ -21,12 +21,12 @@ The goal is to demonstrate **production-quality ML engineering**, clean software
 
 ---
 
-## 🧩 Key Features
+## 🔭 Key Features
 
 | **Category**                 | **Features**                                       |
 | ---------------------------- | -------------------------------------------------- |
 | 🔍 **Recommendation Engine** | Hybrid SVD + TF-IDF model, personalized ranking    |
-| 🧪 **ML Pipeline**           | Data loading, preprocessing, training, evaluation  |
+| 🔭 **ML Pipeline**           | Data loading, preprocessing, training, evaluation  |
 | ⚙️ **Engineering**           | Modular architecture, unit tests, API server       |
 | 🎨 **UX / UI**               | Modern Streamlit app for real-time recommendations |
 | 🚀 **Deployment-Ready**      | Packaged FastAPI endpoint, clear environment setup |
@@ -125,4 +125,108 @@ streamlit run app/app.py
 
 🌐 API Example
 
-POST /recommend
+POST `/recommend`
+
+Request:
+
+```json
+{
+  "user_id": 42
+}
+```
+
+Response:
+
+```json
+{
+  "recommended_books": [102, 87, 13, 55, 201]
+}
+```
+
+---
+
+## 🎨 UI Preview
+<p align="center"> <img src="https://dummyimage.com/900x500/e4e4e4/000&text=Streamlit+App+Preview+(replace+me)" width="90%" /> </p>
+
+---
+
+## 📊 Evaluation
+
+**Metric: RMSE (Root Mean Square Error)**
+Lower is better.
+
+```yaml
+RMSE achieved: (example) 0.82
+```
+Additional metrics (Precision@K, Recall@K) can be added easily.
+
+---
+
+## 🧪 Tests
+
+Run all tests:
+
+```bash
+pytest -q
+```
+
+Tests include:
+
+- Data preprocessing integrity
+
+- Matrix factorization stability
+
+- Prediction output shape
+
+- API response validation
+
+---
+
+## 🧑‍🔬 Roadmap
+
+- [ ] **Add Neural Collaborative Filtering (NCF)**
+
+- [ ] **BERT-based book embeddings**
+
+- [ ] **A/B testing for ranking strategies**
+
+- [ ] **Docker + CI/CD pipeline**
+
+- [ ] **Add user demographic features**
+
+---
+
+## 🙌 Contributing
+
+Contributions are welcome!
+Feel free to open an issue or submit a PR.
+
+---
+
+## 📄 License
+
+MIT License.
+
+---
+
+## ⭐ Why This Project Stands Out
+
+- Clean, modular engineering
+
+- Real-world ML workflow
+
+- UI + API + Model integration
+
+- Professional documentation (this README)
+
+- Demonstrates end-to-end product thinking
+
+Perfect for:
+
+- U.S. CS/Engineering transfer applications
+
+- Portfolio showcase for internships
+
+- Demonstrating ML + full-stack capabilities
+
+---
