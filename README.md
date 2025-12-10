@@ -21,12 +21,12 @@ The goal is to demonstrate **production-quality ML engineering**, clean software
 
 ---
 
-## 🔭 Key Features
+## 🔑 Key Features
 
 | **Category**                 | **Features**                                       |
 | ---------------------------- | -------------------------------------------------- |
 | 🔍 **Recommendation Engine** | Hybrid SVD + TF-IDF model, personalized ranking    |
-| 🔭 **ML Pipeline**           | Data loading, preprocessing, training, evaluation  |
+| ⚗️ **ML Pipeline**           | Data loading, preprocessing, training, evaluation  |
 | ⚙️ **Engineering**           | Modular architecture, unit tests, API server       |
 | 🎨 **UX / UI**               | Modern Streamlit app for real-time recommendations |
 | 🚀 **Deployment-Ready**      | Packaged FastAPI endpoint, clear environment setup |
@@ -162,7 +162,7 @@ Additional metrics (Precision@K, Recall@K) can be added easily.
 
 ---
 
-## 🧪 Tests
+## ⚗️ Tests
 
 Run all tests:
 
@@ -182,7 +182,7 @@ Tests include:
 
 ---
 
-## 🧑‍🔬 Roadmap
+## 🔭 Roadmap
 
 - [ ] **Add Neural Collaborative Filtering (NCF)**
 
