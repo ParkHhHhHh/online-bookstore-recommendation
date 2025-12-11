@@ -70,7 +70,7 @@ online-bookstore-recommendation/
 ---
 
 ## 🧠 Model Components
-**1. Collaborative Filtering (SVD)**
+### 1. Collaborative Filtering (SVD)
 
 - Learns latent user-item features
 
@@ -78,7 +78,7 @@ online-bookstore-recommendation/
 
 - Predicts missing ratings
 
-**2. Content-Based TF-IDF Similarity**
+### 2. Content-Based TF-IDF Similarity
 
 - Works even for new/low-activity users
 
@@ -86,7 +86,7 @@ online-bookstore-recommendation/
 
 - Computes cosine similarity matrix
 
-**3. Hybrid Strategy**
+### 3. Hybrid Strategy
 
 ```ini
 FinalScore = SVD_Prediction + Content_Similarity
@@ -97,25 +97,25 @@ FinalScore = SVD_Prediction + Content_Similarity
 
 ## 🚀 Quick Start
 
-**1. Install Dependencies**
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**2. Train the Model**
+### 2. Train the Model
 
 ```bash
 python train.py   # or run notebook
 ```
 
-**3. Start API Server**
+### 3. Start API Server
 
 ```bash
 uvicorn src.api:app --reload
 ```
 
-**4. Run Streamlit App**
+### 4. Run Streamlit App
 
 ```bash
 streamlit run app/app.py
